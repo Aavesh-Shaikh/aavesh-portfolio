@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia&family=Montserrat:wght@400;600;700&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dde6ed;
+  background-color: #121212;
+  font-family: "Montserrat";
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 15%;
+}
+.text_center {
+  text-align: center;
+}
+.f_s_15 {
+  font-size: 15px;
+}
+.f_w_700 {
+  font-weight: 700;
+}
+.f_w_500 {
+  font-weight: 700;
+}
+.m_t_0_5 {
+  margin-top: 0.5rem;
+}
+.m_t_1 {
+  margin-top: 1rem;
+}
+.m_t_2 {
+  margin-top: 2rem;
+}
+.m_t_5 {
+  margin-top: 5rem;
+}

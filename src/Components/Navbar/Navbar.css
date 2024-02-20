@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  height: 10vh;
+  /* line-height: 10vh; */
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #121212;
+  z-index: 999;
+  align-content: center;
+}
+.logo {
+  font-size: 35px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+.nav-links li {
+  text-decoration: none;
+  color: #dde6ed;
+  font-size: 18px;
+  font-weight: 400;
+
+  padding: 10px 10px;
+  margin: 0 10px;
+  text-transform: capitalize;
+  transition: color 0.3s ease; /* Add a smooth color transition over 0.3 seconds with ease timing function */
+}
+
+.nav-links li:hover {
+  color: #00bfff;
+  transition: ease-in 0.5 /*Changethistothedesiredcoloronhover*/;
+  -webkit-transition: ease-in 0.5 /*Changethistothedesiredcoloronhover*/;
+  -moz-transition: ease-in 0.5 /*Changethistothedesiredcoloronhover*/;
+  -ms-transition: ease-in 0.5 /*Changethistothedesiredcoloronhover*/;
+  -o-transition: ease-in 0.5 /*Changethistothedesiredcoloronhover*/;
+}
+.active-tab {
+  border-bottom: #00bfff 3px solid;
+}
+
+.hmbgr_icon {
+  color: #dde6ed;
+}
+
+.frontend_logo {
+  object-fit: contain;
+  width: 70px;
+  height: 70px;
+}
+button {
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    left: 0;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: #121212;
+    border-bottom: 1px solid #dde6ed;
+  }
+  ul li {
+    /* padding: 12px; */
+    color: #dde6ed;
+    font-size: 18px;
+    font-weight: 500;
+    /* margin: 1rem; */
+    padding: 1rem;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+  }
+  ul h:hover {
+    /* padding: 12px; */
+    text-decoration: none;
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+}
